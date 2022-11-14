@@ -34,6 +34,9 @@ mongoose
 require("./userDetails");
 
 const User = mongoose.model("SupplierInfo");
+app.get('/',(req,res)=>{
+  res.send('karthi -> farmer project');
+})
 app.post("/register", async (req, res) => {
   const { id, name, email, password } = req.body;
 
